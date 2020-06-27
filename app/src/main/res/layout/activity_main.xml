@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/smarthomebar" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnroom1"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:text="Bed Room-1"
+        android:background="#acaca7"/>
+
+    <Button
+        android:id="@+id/btnroom2"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:text="Bed Room-2"
+        />
+
+    <Button
+        android:id="@+id/btntvLounge"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:text="TV-Lounge"
+        android:background="#acaca7"/>
+
+    <Button
+        android:id="@+id/btnkitchen"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:text="Kitchen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#acaca7"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnSecurity"
+            android:layout_width="509dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3c3b37"
+            android:text="Security" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#acaca7"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnschedule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/sgreen" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/aws" />
+
+        <LinearLayout
+            android:layout_width="182dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Client ID" />
+
+            <TextView
+                android:id="@+id/tvClientId"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:text="Disconnected"
+                android:textColor="#ffa500" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="123dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#acaca7">
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="connectClick"
+                android:text="CONNECT"
+                android:background="#2f5f00"/>
+
+            <Button
+                android:id="@+id/btnDisconnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="disconnectClick"
+                android:text="DISCONNECT"
+                android:background="#3c3b37"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

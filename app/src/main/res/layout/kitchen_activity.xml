@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#412c12"
+    tools:context=".Kitchen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffa500"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="AWS Status:" />
+
+        <TextView
+            android:id="@+id/tvStatus1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:text="Disconnected" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        android:background="#412c12">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="KITCHEN"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#ffa500"/>
+
+        <ToggleButton
+            android:id="@+id/btnConnectR1"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:textOff="."
+            android:textOn="."
+            android:textColor="#ffffff"
+            android:onClick="connectClick"
+            android:background="@drawable/aws" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:orientation="horizontal"
+        android:background="#3c3b37">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="264dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/kichenw" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Status:"
+                    android:textColor="#ffa500"/>
+
+                <ImageView
+                    android:id="@+id/imageViewLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/light_off" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/btnLight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onToggleClickedLight"
+                    android:textOff="LIGHT OFF"
+                    android:textOn="LIGHT ON" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Status:"
+                    android:textColor="#ffa500"/>
+
+                <ImageView
+                    android:id="@+id/imageViewLamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/light_off" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/btnLamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onToggleClickedLamp"
+                    android:textOff="LAMP OFF"
+                    android:textOn="LAMP ON" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Status:"
+                    android:textColor="#ffa500"/>
+
+                <ImageView
+                    android:id="@+id/imageViewAC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/acoff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/btnAC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onToggleClickedAC"
+                    android:textOff="AC OFF"
+                    android:textOn="AC ON" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="Status:"
+                    android:textColor="#ffa500"/>
+
+                <ImageView
+                    android:id="@+id/imageViewTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/tvoff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/btnTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onToggleClickedTV"
+                    android:textOff="TV OFF"
+                    android:textOn="TV ON" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <!--    <include layout="@layout/view_thumb_text_seekbar" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewFan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/number_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="SLOW" />
+
+    <SeekBar
+        android:id="@+id/sbProgress"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="16dp"
+        android:max="3"
+        android:minHeight="20dp" />
+
+
+    <Button
+        android:id="@+id/btnfanon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FAN ON" />
+
+    <Button
+        android:id="@+id/btnFanoff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:onClick="connectClick"
+        android:text="FAN OFF"
+        android:background="#acaca7"/>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffa500"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="AWS Status:" />
+
+        <TextView
+            android:id="@+id/tvStatus2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:text="Disconnected" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        android:background="#3c3b37">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="SECURITY"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#ffa500"/>
+
+        <ToggleButton
+            android:id="@+id/btnConnectL"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:textOff="."
+            android:textOn="."
+            android:textColor="#ffffff"
+            android:onClick="connectClick"
+            android:background="@drawable/aws" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_weight="1"
+            android:text="DOOR Status :-"
+            android:textSize="35sp"
+            android:textColor="#ffa500"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/tvdoor"
+            android:layout_width="match_parent"
+            android:layout_height="303dp"
+            app:srcCompat="@drawable/dooroff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="publishClick"
+            android:id="@+id/btnlockN"
+            android:background="@drawable/lock"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="publishClickOff"
+            android:id="@+id/btnunlockN"
+            android:background="@drawable/unlock"/>
+
+
+    </LinearLayout>
+</LinearLayout>
