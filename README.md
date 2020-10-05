@@ -3,4 +3,4 @@ This is my final year project work. It is a Home automation application system b
 User need Specific Customer EndPoint to Connect to Amazon.
 User can operate using the system that we have made.
 
-I think you are working on IOT project.If you need and help email me rizwan.ahmed@ucp.edu.pk
+I think you are working on IOT project.If you need help, email me rizwan.ahmed@ucp.edu.pk
